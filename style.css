@@ -1,0 +1,256 @@
+/* Base */
+section {
+    margin-bottom: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 40px;
+}
+
+.column {
+    width: 500px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.base-column {
+    margin-top: 150px;
+}
+
+body {
+    background-color: #0F172A;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Main Title (Name) */
+.title {
+    font-size: 50px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.job {
+    font-size: 18px;
+}
+
+.name {
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.citate {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(215, 215, 215, 0.6);
+    width: 330px;
+}
+
+.icon {
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+}
+
+.container header {
+    position: fixed;
+    width: 500px;
+}
+
+/* Navbar */
+nav {
+    margin-top: 75px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+nav a {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #A5A5A5;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.bxs-right-arrow {
+    font-size: 10px;
+    padding-right: 5px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    gap: 15px;
+}
+
+footer a {
+    font-size: 40px;
+    color: #A5A5A5;
+}
+
+/* About */
+.story {
+    font-weight: 100;
+    color: rgba(215, 215, 215, 0.6);
+}
+
+.marked {
+    font-weight: 200;
+    color: white;
+}
+
+
+/* Skill and Tools */
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.section-name {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.category h3 {
+    color: white;
+    align-self: flex-start !important;
+    margin: 0;
+}
+
+
+.items {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+    
+}
+
+.item {
+    background-color: #122B39;
+    border: #55C1B0 solid 1px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #55C1B0;
+    min-width: 60px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+.back {
+    color: white;
+    background-color: #55C1B0;
+}
+
+/* Projects */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    gap: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.project-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+.project-description {
+    padding-left: 10px;
+    color: #D7D7D7;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.project-technologies {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.project-technology {
+    background-color: #122B39;
+    border-radius: 1000px;
+    border: #55C1B0 1px solid;
+    color: #55C1B0;
+    padding: 2px 9px;
+    font-size: 13px;
+}
+
+.bx-cog {
+    color: white;
+    font-size: 22px;
+}
+
+.project-box:hover {
+    background: rgba(89, 89, 89, 0.18);
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+    padding: 15px;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+.marked-status {
+    font-weight: 300;
+    color: white;
+}
+
+.status-off {
+    font-weight: 600;
+    color: red;
+}
+
+.status-on {
+    font-weight: 600;
+    color: green;
+}
+
+/* Other */
+.cursor {
+    position: absolute;
+    border-radius: 500px;
+    background: rgba(255, 255, 255, 0.6); /* Полупрозрачный белый фон */
+    pointer-events: none; /* Курсор не мешает взаимодействию с другими элементами */
+    box-shadow: 0 0 2000px 150px rgba(0, 56, 255, 0.15); /* Светящийся эффект */
+}
