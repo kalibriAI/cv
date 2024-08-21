@@ -67,5 +67,28 @@ document.addEventListener('DOMContentLoaded', () => {
       cursor.style.left = `${e.pageX}px`;
       cursor.style.top = `${e.pageY}px`;
     });
-  });
-  
+});
+
+function togglePopup() {
+    const overlay = document.getElementById('popupOverlay');
+    overlay.classList.toggle('show');
+    document.getElementById("message-form").reset();
+}
+
+(function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init({
+      publicKey: "EEL33S7nGauLB16MH",
+    });
+})();
+document.getElementById('message-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // these IDs from the previous steps
+    emailjs.sendForm('service_bsb9wle', 'template_tq6573z', this)
+        .then(() => {
+            console.log('SUCCESS!');
+        }, (error) => {
+            console.log('FAILED...', error);
+        });
+    this.reset()
+});

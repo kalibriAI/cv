@@ -27,10 +27,10 @@
                     </a>  -->
                 </nav> 
 
-                <footer>
+                <div class="social-media-links">
                     <a target="_blank" href="https://t.me/kalixcv" class="contact-link"><i class='bx bxl-telegram' ></i></a> 
                     <a target="_blank" href="https://github.com/kalibriAI" class="contact-link"><i class='bx bxl-github' ></i></a>
-                </footer>
+                </div>
 
             </header>
         </div>
@@ -40,11 +40,15 @@
             <section id="about">
                 <h2 class="section-name"># About</h2>
                 <div class="story">
-                    Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for <span class="marked">anadvertising agency</span>, a <span class="marked">start-up</span>, a <span class="marked">huge corporation</span>, and <span class="marked">adigital product studio</span>.
-                    <br> <br>
-                    My main focus these days is building accessible user interfaces for our customers at <span class="marked">Klaviyo</span>. I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood. In my free time, I've also released an <span class="marked">online video course</span> that covers everything you need to know to build a web app with the Spotify API.
-                    <br> <br>
-                    When I’m not at the computer, I’m usually rock climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for <span class="marked">Korok seeds</span>.
+                    Меня зовут <span class="marked">Фотихбек</span>, мне <span class="marked">16 лет</span>, я начинающий разработчик из Ташкента, Узбекистан. Сейчас я учусь в лицее <span class="marked">International House Tashkent</span> и недавно завершил курс по Python-разработке от <span class="marked">Skillbox</span>. Хотя у меня пока нет опыта работы, я с увлечением погружаюсь в мир программирования и стремлюсь совершенствовать свои навыки.
+                    <br><br>
+                    Меня особенно привлекают технические аспекты разработки, и я предпочитаю заниматься задачами, связанными с алгоритмами и архитектурой программного обеспечения. В программировании я больше ориентируюсь на <span class="marked">fullstack-разработку</span>, где могу использовать свои знания и логическое мышление. Я уже освоил работу с базами данных и начал изучать основы веб-разработки, что помогает мне создавать более сложные и интересные проекты.
+                    <br><br>
+                    Пока что все мои проекты были учебными, но каждый из них стал для меня важным шагом на пути к профессиональному росту. Я с энтузиазмом подхожу к любым задачам и всегда ищу способы улучшить свои решения.
+                    <br><br>
+                    Помимо программирования, я увлекаюсь <span class="marked">физикой</span> и люблю <span class="marked">читать научные книги</span>. Это помогает мне сохранять широкий кругозор и подходить к задачам с аналитической точки зрения, используя глубокие знания из разных областей науки.
+                    <br><br>
+                    Я настроен на постоянное развитие и готов принимать вызовы, чтобы стать мастером своего дела. В будущем я надеюсь применить свои знания и навыки в реальных проектах и внести свой вклад в создание инновационных решений.    
                 </div>
             </section>
             
@@ -154,6 +158,35 @@
         </div>
     </div>
 
+    <footer>
+        <div class="message-window">
+            <button class="message-button-open" onclick="togglePopup()"><i class='bx bxs-message-dots'></i></button>
+            <div id="popupOverlay" class="overlay-container">
+                <div class="popup-box">
+                    <i onclick="togglePopup()" class='bx bx-x'></i>
+                    <h2 style="color: #122B39;">Send Me Letter</h2>
+                    <form class="message-form" id="message-form">
+
+                        <label class="form-label" for="name">Ф.И.О:</label>
+                        <input class="form-input" type="text"placeholder="Enter Your Full Name" id="name" name="name" required>
+        
+                        <label class="form-label" for="email">Telegram/Email:</label>
+                        <input class="form-input"  placeholder="Enter Your Email" id="contact" name="contact" required>
+
+                        <label class="form-label" for="text">Ваше пиьмо:</label>
+                        <textarea placeholder="Enter Your Letter Here..." class="form-input" style="width: 100%; font-weight: 300;" name="letter" id="letter" rows=10 required></textarea>
+
+                        <button class="btn-submit" type="submit">Submit</button>
+                    </form>
+                    
+                </div>  
+            </div>
+
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
+
