@@ -92,3 +92,36 @@ document.getElementById('message-form').addEventListener('submit', function(even
         });
     this.reset()
 });
+
+
+
+
+// DEVICE CHECK
+function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+  
+// Функция для проверки, является ли устройство планшетом
+function isTabletDevice() {
+    return /Tablet|iPad/i.test(navigator.userAgent);
+}
+
+// Функция для изменения стилей в зависимости от устройства
+function applyDeviceStyles() {
+    if (isMobileDevice() || isTabletDevice()) {
+        const header = document.querySelector('.container header');
+        if (header) {
+            header.style.position = 'static';
+        }
+
+        // Меняем flex-direction на column у .container
+        const container = document.querySelector('.container');
+        if (container) {
+            container.style.flexDirection = 'column';
+        }
+    }
+}
+
+// Запускаем функцию при загрузке страницы
+window.addEventListener('load', applyDeviceStyles);
+  
